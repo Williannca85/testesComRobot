@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.11.3 on win32)" generated="2024-09-24T20:30:44.627187" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot-Framework-Organo-Main" source="d:\Willian\Cursos\Alura\Robot Framework automatizando testes no padrão BDD\robot-framework-organo-main">
+<suite id="s1-s1" name="Curso-Robot" source="d:\Willian\Cursos\Alura\Robot Framework automatizando testes no padrão BDD\robot-framework-organo-main\curso-robot">
+<suite id="s1-s1-s1" name="Primeiro Teste" source="d:\Willian\Cursos\Alura\Robot Framework automatizando testes no padrão BDD\robot-framework-organo-main\curso-robot\primeiro_teste.robot">
+<kw name="Set Environment Variable" owner="OperatingSystem" type="SETUP">
+<msg time="2024-09-24T20:30:45.912380" level="INFO">Environment variable 'webdriver.chrome.driver' set to value 'd:\Willian\Cursos\Alura\Robot Framework automatizando testes no padrão BDD\robot-framework-organo-main\curso-robot/chromedriver.exe'.</msg>
+<arg>webdriver.chrome.driver</arg>
+<arg>d:\\Willian\\Cursos\\Alura\\Robot Framework automatizando testes no padrão BDD\\robot-framework-organo-main\\curso-robot/chromedriver.exe</arg>
+<doc>Sets an environment variable to a specified value.</doc>
+<status status="PASS" start="2024-09-24T20:30:45.912380" elapsed="0.003999"/>
+</kw>
+<test id="s1-s1-s1-t1" name="Abrir o navegador e acessar o site do organo" line="7">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-24T20:30:45.920379" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000'.</msg>
+<arg>http://localhost:3000</arg>
+<arg>browser=Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-24T20:30:45.916379" elapsed="3.656119"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-24T20:30:49.576539" elapsed="2.361792"/>
+</kw>
+<status status="PASS" start="2024-09-24T20:30:45.916379" elapsed="6.021952"/>
+</test>
+<status status="PASS" start="2024-09-24T20:30:45.136051" elapsed="6.806246"/>
+</suite>
+<status status="PASS" start="2024-09-24T20:30:45.132041" elapsed="6.810256"/>
+</suite>
+<status status="PASS" start="2024-09-24T20:30:45.080202" elapsed="6.866093"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot-Framework-Organo-Main">Robot-Framework-Organo-Main</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Curso-Robot">Robot-Framework-Organo-Main.Curso-Robot</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Primeiro Teste">Robot-Framework-Organo-Main.Curso-Robot.Primeiro Teste</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.11.3 on win32)" generated="2024-09-24T21:14:19.071921" rpa="false" schemaversion="5">
+<suite id="s1" name="Curso-Robot" source="D:\Willian\Cursos\Alura\Robot Framework automatizando testes no padrão BDD\robot-framework-organo-main\curso-robot">
+<suite id="s1-s1" name="Primeiro Teste" source="D:\Willian\Cursos\Alura\Robot Framework automatizando testes no padrão BDD\robot-framework-organo-main\curso-robot\primeiro_teste.robot">
+<kw name="Set Environment Variable" owner="OperatingSystem" type="SETUP">
+<msg time="2024-09-24T21:14:20.052160" level="INFO">Environment variable 'webdriver.chrome.driver' set to value 'D:\Willian\Cursos\Alura\Robot Framework automatizando testes no padrão BDD\robot-framework-organo-main\curso-robot/chromedriver.exe'.</msg>
+<arg>webdriver.chrome.driver</arg>
+<arg>D:\\Willian\\Cursos\\Alura\\Robot Framework automatizando testes no padrão BDD\\robot-framework-organo-main\\curso-robot/chromedriver.exe</arg>
+<doc>Sets an environment variable to a specified value.</doc>
+<status status="PASS" start="2024-09-24T21:14:20.052160" elapsed="0.000000"/>
+</kw>
+<test id="s1-s1-t1" name="Abrir o navegador e acessar o site do organo" line="7">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-24T21:14:20.052160" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000'.</msg>
+<arg>http://localhost:3000</arg>
+<arg>browser=Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-24T21:14:20.052160" elapsed="3.539354"/>
+</kw>
+<status status="PASS" start="2024-09-24T21:14:20.052160" elapsed="3.540895"/>
+</test>
+<test id="s1-s1-t2" name="Preencher os campos do formulário" line="10">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T21:14:23.601614" level="INFO">Typing text 'Willian' into text field 'id:form-nome'.</msg>
+<arg>id:form-nome</arg>
+<arg>Willian</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T21:14:23.600091" elapsed="0.235361"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T21:14:23.837089" level="INFO">Typing text 'Desenvolvedor' into text field 'id:form-cargo'.</msg>
+<arg>id:form-cargo</arg>
+<arg>Desenvolvedor</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T21:14:23.835981" elapsed="0.297743"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T21:14:24.133724" level="INFO">Typing text 'https://picsum.photos/100/100' into text field 'id:form-imagem'.</msg>
+<arg>id:form-imagem</arg>
+<arg>https://picsum.photos/100/100</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T21:14:24.133724" elapsed="0.379208"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-24T21:14:24.512932" level="INFO">Clicking element 'class:lista-suspensa'.</msg>
+<arg>class:lista-suspensa</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T21:14:24.512932" elapsed="0.130276"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-24T21:14:24.643208" level="INFO">Clicking element '//option[contains(.,"Programação")]'.</msg>
+<arg>//option[contains(.,"Programação")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T21:14:24.643208" elapsed="0.089828"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-24T21:14:34.733940" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-24T21:14:24.733575" elapsed="10.000365"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-24T21:14:34.733940" level="INFO">Clicking element 'id:form-botao'.</msg>
+<arg>id:form-botao</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T21:14:34.733940" elapsed="0.100325"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-09-24T21:14:34.889871" level="INFO">Element 'class:colaborador' is displayed.</msg>
+<arg>class:colaborador</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-24T21:14:34.834265" elapsed="0.055606"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-24T21:14:39.890102" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-24T21:14:34.889871" elapsed="5.000231"/>
+</kw>
+<status status="PASS" start="2024-09-24T21:14:23.598058" elapsed="16.292044"/>
+</test>
+<status status="PASS" start="2024-09-24T21:14:19.202073" elapsed="20.688029"/>
+</suite>
+<status status="PASS" start="2024-09-24T21:14:19.087196" elapsed="20.808880"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Curso-Robot">Curso-Robot</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="Primeiro Teste">Curso-Robot.Primeiro Teste</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
